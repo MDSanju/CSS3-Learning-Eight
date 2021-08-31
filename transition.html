@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Attribute CSS3</title>
+    <style>
+        .box {
+            width: 240px;
+            height: 200px;
+            color: yellow;
+            border: 5px solid orangered;
+            background-color: #222;
+            transition: width 5s linear 1s, height 5s linear 1s;
+        }
+
+        .two {
+            width: 190px;
+            height: 190px;
+            color: yellow;
+            border: 5px solid orangered;
+            background-color: #222;
+            transition: width 5s linear 1s, height 5s linear 1s, transform 1s;
+        }
+
+        .box:hover {
+            width: 400px;
+            height: 400px;
+        }
+
+        .two:hover {
+            width: 350px;
+            height: 350px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition appty with Transform tutorial!</h1>
+    <div class="box">
+        <h1>Transition CSS3</h1>
+    </div>
+    <br><br><br>
+    <div class="two">
+        <h1>Transition-2</h1>
+    </div>
+</body>
+
+</html>
